@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^6.0.1",
     "sass": "^1.91.0"
   }
