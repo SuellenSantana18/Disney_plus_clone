@@ -20,38 +20,39 @@
             position: relative;
 
             &::after {
-                content: '+';
-                position: absolute;
-                display: flex;
-                top: 0px;   // mesma altura do padding
-                right: 24px; // bem encostado na direita
-                height: 100%;
-                font-size: 40px;
-                color: white;
-                }
+            content: '+';
+            position: absolute;
+            top: 0;
+            right: 24px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+
             }
 
 
- &__answer {
-  max-height: 0;          // limita a altura
-  overflow: hidden;       // esconde o que passa
+&__answer {
+  max-height: 0;      
+  overflow: hidden;       
   color: white;
-  transition: max-height 0.3s ease; // opcional, pra animação
+  padding: 0 24px;
+  transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
 &--is-open {
-
-      .faq__questions__item__question::after{
-        content:'-'
-      }
-     .faq__questions__item__answer {
-  max-height: 0;        
-  color: white;
-  height: auto;
-  padding: 24px;
-
+  .faq__questions__item__question::after {
+    content:'-';
+  }
+  .faq__questions__item__answer {
+    max-height: 500px;   // grande o suficiente
+    padding: 24px;       // anima junto
+  }
 }
-}
+
+
 
         }
     }

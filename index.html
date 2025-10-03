@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+
+   <header class="header">
+    <div class="header__container">
+      <h1>
+        <img  class="header__logo" src="./src/images/disneyplus.svg" alt="">
+      </h1>
+      <ul class="header__links">
+        <li class="header__links__item">
+          <a href="" class="button">Assine agora</a>
+        </li>
+        <li class="header__links__item">
+          <a href="" class="button">Entrar</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding">
@@ -203,7 +220,7 @@
       <h2 class="title">Perguntas frequentes</h2>
       <ul class="faq__questions">
         <li class="faq__questions__item">
-          <div class="faq__questions__item__question">
+          <div class="faq__questions__item__question" data-faq-question="true">
             Pergunta?
           </div>
           <div class="faq__questions__item__answer">
@@ -211,15 +228,15 @@
           </div>
         </li>
           <li class="faq__questions__item faq__questions__item--is-open">
-          <div class="faq__questions__item__question">
+          <div class="faq__questions__item__question"  data-faq-question="true">
             Pergunta?
           </div>
-          <div class="faq__questions__item__answer">
+          <div class="faq__questions__item__answer text--big">
             A resposta da pergunta
           </div>
         </li>
           <li class="faq__questions__item">
-          <div class="faq__questions__item__question">
+          <div class="faq__questions__item__question"  data-faq-question="true">
             Pergunta?
           </div>
           <div class="faq__questions__item__answer">
@@ -228,6 +245,51 @@
         </li>
       </ul>
     </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <img class="footer__logo" src="./src/images/disneyplus.svg" alt="">
+      <ul class="footer__links">
+        <li class="footer__links__item">
+         <div class="language-selector">
+           <img src="./src/images/icones/globe.svg" alt="Globo">
+          <select>
+            <option>English</option>
+            <option selected>Portugues</option>
+          </select>
+         </div>
+        </li>
+        <li class="footer__links__item">
+          <a href="" class="text--small">Termos e Condiçoes de Uso</a>
+        </li>
+         <li class="footer__links__item">
+          <a href="" class="text--small" >Politica de privacidade</a>
+        </li>
+         <li class="footer__links__item">
+          <a href="" class="text--small">Termos e Condiçoes de Uso</a>
+        </li>
+         <li class="footer__links__item">
+          <a href="" class="text--small">Termos e Condiçoes de Uso</a>
+        </li>
+
+         <li class="footer__links__item">
+          <a href="" class="text--small">
+            Dispositivos compativeis</a>
+        </li>
+          <li class="footer__links__item">
+          <a href="" class="text--small">
+            Sobre o Disney</a>
+        </li>
+      </ul>
+      <p class="text--small">
+        2022 Disney, Disney+ e The Walt Diesney Company. Todos os direitos reservados
+      </p>
+       <p class="text--small">
+        2022 Disney, Disney+ e The Walt Diesney Company. Todos os direitos reservados
+      </p>
+      </div>
+    </footer>
+
     <script src="./src/main.js"></script>
 </body>
 </html>
